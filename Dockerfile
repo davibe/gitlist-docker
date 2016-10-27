@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04
 RUN apt-get update
 RUN apt-get -y install git nginx-full php5-fpm curl
 ADD https://s3.amazonaws.com/gitlist/gitlist-master.tar.gz /var/www/
